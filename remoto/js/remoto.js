@@ -5,7 +5,7 @@ window.onload = function() {
     var origen = e.origin,
         datos = e.data;
 
-    if(origen === "http://fiddle.jshell.net") {
+    if(origen === "http://127.0.0.1:5555") {
       textoEnRemoto.innerHTML = "El mensaje enviado por el origen  "+ origen +" fue: "+datos;
       e.source.postMessage("exito!", e.origin);
     } else {

@@ -17,7 +17,7 @@ window.onload = function() {
   button.onclick = function( e ) {
     e.preventDefault();
     console.log(textarea.value);
-    iframe.contentWindow.postMessage(textarea.value, "http://127.0.0.1:4444/remoto.html")
+    iframe.contentWindow.postMessage(textarea.value, "http://127.0.0.1:4444/remoto/remoto.html")
   };
 
 };
