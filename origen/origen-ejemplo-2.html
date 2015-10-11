@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!-- app caché-->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ejemplo de postMessage">
+  <meta name="author" content="David Salazar">
+  <title>Demo HTML5 Iframe Post Message</title>
+  <link rel="shortcut icon" href="">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/origen.css">
+  <!--[if IE]>
+    <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand" href="http://wp.me/p5fk4w-ZD">Volver a articulo</a>
+      </div>
+        <h4 class="navbar-text navbar-center">Ejemplo de postMessage</h4>
+
+    </div><!-- /.container-fluid -->
+  </nav>
+
+  <div class="container">
+    <header clas="row">
+      <h4>Enviando <b>distintos tipos de objetos</b> a un iframe cross-origin</h4>
+    </header>
+
+    <div class="row">
+      <div class="col-xs-4">
+        <form class="form form-responsive">
+
+          <label for="#mensaje">
+            <h4>Primitivos y Objetos</h4>
+
+          </label>
+          <select class="form-control">
+            <option value="str">Cadena</option>
+            <option value="bool">Boleano</option>
+            <option value="num">Número</option>
+            <option value="obj">Objeto</option>
+            <option value="array">Array</option>
+          </select>
+
+          <button class="btn btn-primary btn-block enviar">Enviar datos</button>
+          <br/>
+
+          <label for="#">
+            <h4>Transferable:</h4>
+          </label>
+          <br/>
+
+          <code class="hide"></code>
+          <br/>
+          <br/>
+
+          <button class="btn btn-primary btn-block mostrarTransferible">Mostrar estado de transferible</button>
+          <button class="btn btn-primary btn-block enviarTransferable">Enviar Transferible</button>
+
+        </form>
+      </div>
+
+      <div class="col-xs-8">
+        <h2>
+          <a href="#enlacearemoto">
+            Remoto
+          </a>
+        </h2>
+        <iframe id="remoto" src="http://127.0.0.1:4444/remoto/remoto-ejemplo-2.html"></iframe>
+        <small class="help-text"></small>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="js/origen-ejemplo-2.js"></script>
+
+</body>
+</html>

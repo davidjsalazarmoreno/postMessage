@@ -1,10 +1,16 @@
 header h1,
 header p,
-h2 {
+h2,
+h4 {
   text-align: center;
 }
 
 form.form {
   margin-bottom: 25px;
   margin-top: 25px;
+}
+
+iframe {
+	width: 100%;
+	margin: 0 auto;
 }

@@ -7,7 +7,7 @@ window.onload = function() {
 
     if(origen === "http://fiddle.jshell.net") {
       textoEnRemoto.innerHTML = "El mensaje enviado por el origen  "+ origen +" fue: "+datos;
-      e.source.postMessage("resultado", e.origin);
+      e.source.postMessage("exito!", e.origin);
     } else {
       textoEnRemoto.innerHTML = "origen no permitido";
     }

@@ -1,12 +1,11 @@
 window.addEventListener("message", function(e) {
   var confirmacion = document.getElementsByTagName("small")[0],
-      origenRemoto = e.origin;
+      origenRemoto = e.origin,
+      datosOrigenRemoto = e.data;
 
-  console.log(e);
-
-  if(origenRemoto ==  "http://127.0.0.1:4444") {
+  if(origenRemoto ==  "http://127.0.0.1:4444" && datosOrigenRemoto == "exito!" ) {
     confirmacion.innerHTML = "Confirmación el iframe con origen " + origenRemoto +
-    " ha recibido el mensaje que le hemos enviado y lo ha notificado";
+    " ha recibido el mensaje que le hemos enviado y lo ha notificado " + datosOrigenRemoto;
   }
 }, false);
 

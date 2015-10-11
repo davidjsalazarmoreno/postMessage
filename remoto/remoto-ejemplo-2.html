@@ -5,18 +5,15 @@
   <meta name="description" content="Ejemplo de postMessage">
   <meta name="author" content="David Salazar">
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="css/remoto.css">
   <title>iframe Remoto: Ejemplo de postMessage</title>
 </head>
 <body>
 
-  <p>
-    El mensaje enviado por el origen fue: "Ninguno"
-  </p>
-  <small>
-    <a href="">Volver al artículo</a>
-  </small>
-
-  <script type="text/javascript" src="js/remoto.js"></script>
+  <code id="log"></code>
+  <!-- Polyfill para Object.prototype.toSource() https://github.com/piranna/tosource-polyfill -->
+  <script type="text/javascript" src="js/tosource.js"></script>
+  <script type="text/javascript" src="js/remoto-ejemplo-2.js"></script>
 
 </body>
 </html>
